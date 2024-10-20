@@ -1,12 +1,12 @@
 "use client";
 import React, { useState } from 'react';
-const Cuadro=()=>{
+const Cuadro=({dato})=>{
     const [nombre, setNombre] = useState("");
     return(
         <input
             type="text"
             value={nombre}
-            placeholder="Escribe aquí "
+            placeholder={dato}
             onChange={(e) => setNombre(e.target.value)}
         />
     );
